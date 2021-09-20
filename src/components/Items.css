@@ -2,12 +2,30 @@
     border: 3px solid black;
     border-radius: 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 10px;
-}
+    grid-gap: 10px;
+    margin-left: 10px;
+    flex-direction:row;
+  }
+  .item h1{
+    flex-direction: column;
+  }
 
 .items{
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  overflow-y: hidden; /* making the header stay at the center of the page while scrolling to the right and adding a scoll function*/
+  overflow-x: scroll;
+  padding: 20px;
+    
 
+}
+.items::-webkit-scrollbar {
+  /*this helps to keep the scrolling function but takes away the sight of the scroll bar*/
+  display: none;
+}
+
+.projector{
+  width: 100%;
+  height: 100%;
 }
