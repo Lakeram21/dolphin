@@ -6,7 +6,7 @@
     padding: 10px;
     grid-gap: 10px;
     margin-left: 10px;
-    flex-direction:row;
+    flex-direction:column;
   }
   .item h1{
     flex-direction: column;
@@ -17,6 +17,7 @@
   overflow-y: hidden; /* making the header stay at the center of the page while scrolling to the right and adding a scoll function*/
   overflow-x: scroll;
   padding: 20px;
+  grid-gap: 30px;
     
 
 }
