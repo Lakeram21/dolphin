@@ -1,12 +1,61 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Item from './Item';
+import HomeItems from "./HomeItems";
+import Contacts from './Contacts';
+import Works from "./Works";
+import Home from './Home';
+
 
 function Navigation() {
-    
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/home">Home</Link>
+            </li>
+
+            <li>
+              <Link to="/products">Products</Link>
+            </li>
+
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+
+            <li>
+              <Link to="/howitworks">How It Works</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/home">
+            {/* <Items/> */}
+            <Home/>
+          </Route>
+
+          <Route path="/products">
+            {/* <Items/> */}
+            <HomeItems />
+          </Route>
+
+          <Route path="/contact">
+            {/* <Items/> */}
+            <Contacts />
+          </Route>
+
+          <Route path="/howitworks">
+            {/* <Items/> */}
+            <Works />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
 }
 
-export default Navigation
+export default Navigation;
+
+

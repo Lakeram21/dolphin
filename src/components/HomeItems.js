@@ -6,7 +6,7 @@ import "./Items.css"
 
 
 
-function Items() {
+function HomeItems() {
   // console.log("project ----",Projector)
   const [items, setItems] = useState([
     {
@@ -65,4 +65,4 @@ function Items() {
   );
 }
 
-export default Items
+export default HomeItems

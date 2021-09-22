@@ -1,12 +1,15 @@
 
 import './App.css';
-import Items from './components/Items.js'
+
+import Navigation from './components/Navigation';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Dolphin---0768</h1>
-      <Items/>
+     
+      
+      <Navigation/>
+      
     </div>
   );
 }
