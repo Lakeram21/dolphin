@@ -5,13 +5,16 @@ import HomeItems from "./HomeItems";
 import Contacts from './Contacts';
 import Works from "./Works";
 import Home from './Home';
+import Products from './Products'
+import "./Navigation.css"
+
 
 
 function Navigation() {
   return (
     <Router>
       <div>
-        <nav>
+        <nav className="navbar">
           <ul>
             <li>
               <Link to="/home">Home</Link>
@@ -38,7 +41,7 @@ function Navigation() {
 
           <Route path="/products">
             {/* <Items/> */}
-            <HomeItems />
+            <Products />
           </Route>
 
           <Route path="/contact">

@@ -1,0 +1,29 @@
+.products{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-left: 20px;
+    margin-right: 40px;
+     margin-top: 90px;
+}
+
+.product{
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    grid-gap: 20px;
+    margin-left: 10px;
+    flex-direction:column;
+    background-color:rgb(163, 154, 154);
+    transition: transform 450ms;
+   
+
+    /* transform: scale(1.08); */
+}
+.product:hover{
+    
+  transform: scale(1.08);
+}

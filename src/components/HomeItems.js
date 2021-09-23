@@ -55,9 +55,9 @@ function HomeItems() {
           
           <img src= "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/m aster/pass/phonepicutres-TA.jpg" alt='logo' height='193'/>
           <h1>{item.name}</h1>
-          <h1>Item id: {item.id}</h1>
+          {/* <h1>Item id: {item.id}</h1>
           <h1>{item.price}</h1>
-          <h1>{item.description}</h1>
+          <h1>{item.description}</h1> */}
 
         </div>
       ))}
